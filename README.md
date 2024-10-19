@@ -12,10 +12,8 @@
 
 ## Description
 
-**"VehicleBoxes"** is a versatile plugin for Rust that enhances the **vehicle storage system** in the game. It allows players to **add** and **remove** storage boxes to/from vehicles, providing additional storage space and improving the overall vehicle utility.
-
-The plugin aims to enhance the **player experience** in Rust by offering more **flexibility** in vehicle usage. It adds an extra layer of **customization** and **practicality** to vehicles, making them even more valuable assets in the game.
-
+ **VehicleBoxes** is a plugin that expands the vehicle storage system in the game. It allows players to attach and remove storage boxes from vehicles to create additional storage space and improve the overall utility of the vehicle. The plugin aims to improve the game experience in Rust by providing more flexibility in vehicle usage. It adds an extra layer of customization and practicality to vehicles, making them even more valuable objects in the game. 
+ 
 ## Features:
 
 - **Add Boxes**: Players can add storage boxes to supported vehicles.
