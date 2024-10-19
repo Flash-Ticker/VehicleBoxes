@@ -1,29 +1,86 @@
-## SwimmingDrops
+## VehicleBoxes
 
 **Project details**
 
-**Project:** *SwimmingDrops*
+**Project:** *VehicleBoxes*
 
 **dev language:** *c# oxide*
 
 **Plugin language:** *en*
 **Author:** [@RustFlash](https://github.com/Flash-Ticker)
-[![RustFlash - Your Favourite Trio Server](https://github.com/Flash-Ticker/SwimmingDrops/blob/main/SwimmingDrops_Thumb.jpg)](https://www.youtube.com/watch?v=2LsGdJKELsA)
-
+[![RustFlash - Your Favourite Trio Server](https://github.com/Flash-Ticker/VehicleBoxes/blob/main/VehicleBoxes_Thumb.png)]()
 
 ## Description
 
-**SwimmingDrops** brings supply drops to life in water environments. This plugin ensures that supply drops behave realistically when they land in water, providing a more immersive and balanced game experience.
+**"VehicleBoxes"** is a versatile plugin for Rust that enhances the **vehicle storage system** in the game. It allows players to **add** and **remove** storage boxes to/from vehicles, providing additional storage space and improving the overall vehicle utility.
+
+The plugin aims to enhance the **player experience** in Rust by offering more **flexibility** in vehicle usage. It adds an extra layer of **customization** and **practicality** to vehicles, making them even more valuable assets in the game.
 
 ## Features:
-- Allows supply drops to float gently on water surfaces
-- Maintains the original landing behavior of supply drops
-- Automatically releases the parachutes when the drops float to the water surface
-- Efficient performance with minimal impact on server resources
-- Does not affect the trajectory or drop position of supply drops
-- Maintains the original orientation of the supply drop when it lands in the water
-- Can fall over in the water and still swim realistically
-- Integrates seamlessly with the existing supply drop system in Rust
 
+- **Add Boxes**: Players can add storage boxes to supported vehicles.
+- **Remove Boxes**: Players can remove added boxes from vehicles.
+- **Vehicle Support**: Currently supports Minicopter and Scrap Transport Helicopter.
+- **Permission System**: Ensures that only authorized players can add or remove boxes.
+- **Configurable**: Customizable box prefab and positioning for different vehicle types.
+
+## Commands:
+
+1. `/addbox` - Adds a storage box to the vehicle the player is looking at.
+2. `/removebox` - Removes the storage box from the vehicle the player is looking at.
+
+## Permissions:
+
+1. `vehicleboxes.addbox` - Allows players to add boxes to vehicles.
+2. `vehicleboxes.removebox` - Allows players to remove boxes from vehicles.
+
+## Configuration:
+
+The plugin settings can be adjusted in the `VehicleBoxes.json` file in the `config` folder. Here you can change properties like the box prefab and the position/rotation for different vehicle types.
+
+```json
+{
+  "BoxPrefab": "assets/prefabs/deployable/woodenbox/woodbox_deployed.prefab",
+  "VehiclePositions": {
+    "assets/content/vehicles/minicopter/minicopter.entity.prefab": {
+      "Position": {
+        "x": 0,
+        "y": 0.31,
+        "z": -0.57
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      }
+    },
+    "assets/content/vehicles/scrap heli carrier/scraptransporthelicopter.prefab": {
+      "Position": {
+        "x": -0.5,
+        "y": 0.80,
+        "z": 1.75
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  }
+}
+```
+
+## Multilingual Support:
+
+The plugin supports multiple languages. Language files are located in the lang folder and can be edited or expanded as needed. Currently supported languages:
+
+default: EN
+
+**DE | FR | ES | IT | TR | RU | UK**
+
+Please note that the language files were translated using the DeepL Language Tool 
+
+---
 
 **load, run, enjoy** 💝
+
